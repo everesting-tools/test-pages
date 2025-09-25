@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест GitHub Pages</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f0f0f0;
+        }
+        h1 { color: #2c3e50; }
+        .status { 
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Тест GitHub Pages</h1>
+    <div class="status">
+        <h2>✅ Если вы это видите - GitHub Pages работает!</h2>
+        <p>Время сервера: <span id="time"></span></p>
+        <p>Аккаунт: everesting-tools</p>
+        <p>Репозиторий: stopwatch</p>
+    </div>
+    
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString('ru-RU');
+        console.log('GitHub Pages тест работает!');
+    </script>
+</body>
+</html>
